@@ -1,61 +1,33 @@
 # My Neural Network Framework
 ## 🏗️ Project Architecture
 
-This project is organized into several distinct modules, each with a specific responsibility. The conceptual components of the neural network framework are mapped to the file structure as follows:
-
----
-
-### 📂 `engine.py`
-This file contains the core autograd engine.
-
-* **Autograd System**
-    * `Value`: The fundamental object that wraps data and enables automatic differentiation by building a computation graph.
-
----
-
-### 📂 `nn.py`
-This file contains all the building blocks for creating neural network architectures.
-
-* **Module (Base Class)**: The foundation for all network components, providing methods like `parameters()` and `zero_grad()`.
-* **Layers**: Individual operations that form the network.
-    * `Linear`: A fully connected layer.
-    * `ReLU`, `Sigmoid`, etc.: Activation functions.
-* **NeuralNetwork**: The main class used to assemble layers into a complete model.
-
----
-
-### 📂 `loss.py`
-This file holds the functions used to evaluate the model's performance.
-
-* **Loss Functions**
-    * `MSELoss`: For regression tasks.
-    * `CrossEntropyLoss`: For classification tasks.
-
----
-
-### 📂 `optim.py`
-This file contains the optimizers used to train the model by updating its parameters.
-
-* **Optimizers**
-    * `SGD`: Stochastic Gradient Descent.
-
----
-
-### 📂 `history.py`
-This file contains a utility class for logging and visualizing the training process.
-
-* **History**
-    * Methods to record and plot metrics like loss and accuracy.
-
----
-
-### 📂 `train.py`
-This is the main executable script that orchestrates the entire training process.
-
-* **Training Loop**: The sequence of operations (forward pass, loss calculation, backward pass, and parameter updates) that constitutes the model training.
-A simple neural network framework built from scratch in Python to understand the core concepts of deep learning. This project includes a custom autograd engine for automatic differentiation.
-
----
+my_nn_framework/
+│
+├── 📂 engine.py
+│   └── Autograd System
+│       └── Value
+│
+├── 📂 nn.py
+│   ├── Module (Base Class)
+│   ├── Layers
+│   │   ├── Linear
+│   │   └── Activation (ReLU, etc.)
+│   └── NeuralNetwork
+│
+├── 📂 loss.py
+│   └── Loss
+│       ├── MSELoss
+│       └── CrossEntropyLoss
+│
+├── 📂 optim.py
+│   └── Optimizer
+│       └── SGD
+│
+├── 📂 history.py
+│   └── History (Plotting & Logging)
+│
+└── 📂 train.py
+    └── Training Loop (Orchestrator)
 
 ## Features
 
