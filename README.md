@@ -1,41 +1,26 @@
 # My Neural Network Framework
 ## 🏗️ Project Architecture
 
-my_nn_framework/
-│
-├── 📂 engine.py
-│   └── Autograd System
-│       └── Value
-│
-├── 📂 nn.py
-│   ├── Module (Base Class)
-│   ├── Layers
-│   │   ├── Linear
-│   │   └── Activation (ReLU, etc.)
-│   └── NeuralNetwork
-│
-├── 📂 loss.py
-│   └── Loss
-│       ├── MSELoss
-│       └── CrossEntropyLoss
-│
-├── 📂 optim.py
-│   └── Optimizer
-│       └── SGD
-│
-├── 📂 history.py
-│   └── History (Plotting & Logging)
-│
-└── 📂 train.py
-    └── Training Loop (Orchestrator)
-
-## Features
-
-- [ ] **Autograd Engine**: A `Value` class that tracks operations to build a dynamic computation graph.
-- [ ] **Modular Layers**: `Linear`, `ReLU`, and other activation layers.
-- [ ] **Loss Functions**: `MSELoss` for regression and `CrossEntropyLoss` for classification.
-- [ ] **Optimizer**: `SGD` optimizer for model training.
-- [ ] **Visualization**: Plotting for training loss and accuracy.
+- **`engine.py`**
+  - Autograd System
+    - `Value`
+- **`nn.py`**
+  - `Module` (Base Class)
+  - Layers
+    - `Linear`
+    - `Activation` (ReLU, etc.)
+  - `NeuralNetwork`
+- **`loss.py`**
+  - Loss Functions
+    - `MSELoss`
+    - `CrossEntropyLoss`
+- **`optim.py`**
+  - Optimizer
+    - `SGD`
+- **`history.py`**
+  - History (Plotting & Logging)
+- **`train.py`**
+  - Training Loop (Orchestrator)
 
 ---
 
