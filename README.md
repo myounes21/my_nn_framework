@@ -1,27 +1,25 @@
 # My Neural Network Framework
 ## 🏗️ Project Architecture
 ```plaintext
+## 🏗️ Project Architecture
+
 my_nn_framework/
-├── 📂 engine.py
-│   └── Autograd System
-│       └── Value
+├── 📂 autograd.py
+│   └── Value
 ├── 📂 nn.py
-│   ├── Module (Base Class)
-│   ├── Layers
-│   │   ├── Linear
-│   │   └── Activation (ReLU, etc.)
+│   ├── Module
+│   ├── Linear
+│   ├── ReLU
 │   └── NeuralNetwork
 ├── 📂 loss.py
-│   └── Loss
-│       ├── MSELoss
-│       └── CrossEntropyLoss
+│   ├── MSELoss
+│   └── CrossEntropyLoss
 ├── 📂 optim.py
-│   └── Optimizer
-│       └── SGD
+│   └── SGD
 ├── 📂 history.py
-│   └── History (Plotting & Logging)
+│   └── History
 └── 📂 train.py
-    └── Training Loop (Orchestrator)
+    └── Training Loop
 ```
 ---
 
