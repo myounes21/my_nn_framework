@@ -1,27 +1,28 @@
 # My Neural Network Framework
 ## 🏗️ Project Architecture
-
-- **`engine.py`**
-  - Autograd System
-    - `Value`
-- **`nn.py`**
-  - `Module` (Base Class)
-  - Layers
-    - `Linear`
-    - `Activation` (ReLU, etc.)
-  - `NeuralNetwork`
-- **`loss.py`**
-  - Loss Functions
-    - `MSELoss`
-    - `CrossEntropyLoss`
-- **`optim.py`**
-  - Optimizer
-    - `SGD`
-- **`history.py`**
-  - History (Plotting & Logging)
-- **`train.py`**
-  - Training Loop (Orchestrator)
-
+```plaintext
+my_nn_framework/
+├── 📂 engine.py
+│   └── Autograd System
+│       └── Value
+├── 📂 nn.py
+│   ├── Module (Base Class)
+│   ├── Layers
+│   │   ├── Linear
+│   │   └── Activation (ReLU, etc.)
+│   └── NeuralNetwork
+├── 📂 loss.py
+│   └── Loss
+│       ├── MSELoss
+│       └── CrossEntropyLoss
+├── 📂 optim.py
+│   └── Optimizer
+│       └── SGD
+├── 📂 history.py
+│   └── History (Plotting & Logging)
+└── 📂 train.py
+    └── Training Loop (Orchestrator)
+```
 ---
 
 ## Setup and Installation
